@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flynn Mobile Practical Test</string>
+    <string name="add_album">Create New Album</string>
+    <string name="add_album_hint">Album Title</string>
+    <string name="add_photo">Upload a new Photo</string>
+    <string name="add_photo_hint">Copy Link Here</string>
+    <string name="add_photo_title_hint">Photo\'s Title</string>
+</resources>
