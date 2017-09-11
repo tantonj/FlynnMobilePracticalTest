@@ -59,7 +59,7 @@ public class PhotoActivity extends AppCompatActivity implements GestureDetector.
         mDetector = new GestureDetectorCompat(this,this);
         mDetector.setOnDoubleTapListener(this);
         albumTitle = bundle.getString("title");
-        albumId = bundle.getInt("id");
+        albumId = Integer.parseInt(bundle.getString("id"));
         ((TextView) findViewById(R.id.albumTitle)).setText("From Album: " + albumTitle);
         try {
             data = new JSONArray(bundle.getString("data"));
@@ -129,7 +129,7 @@ public class PhotoActivity extends AppCompatActivity implements GestureDetector.
     @Override
     public boolean onFling(MotionEvent me0, MotionEvent me1, float vx, float vy) { //detects fling, animates transition between children in ViewFlipper
         ViewFlipper flipper = ((ViewFlipper)findViewById(R.id.imageFlipper));
-        if(me1.getX() - me0.getX() > 200) //swipe left
+        if(me1.getX() - me0.getX() > 200) //swipe right
         {
             if(currentImage > 0) { //if the current image is not the first one and you flick right go back
                 currentImage--;
@@ -139,14 +139,14 @@ public class PhotoActivity extends AppCompatActivity implements GestureDetector.
             }
             else
                 Toast.makeText(getBaseContext(), "Beginning of Album", Toast.LENGTH_SHORT).show(); //otherwise tell user
-        }if(me0.getX() - me1.getX() > 200) //swipe right
+        }if(me0.getX() - me1.getX() > 200) //swipe left
         {
-            if(currentImage < data.length()) { //if the current image isn't the last image and they flick left go forward
+            if(currentImage < data.length()-1) { //if the current image isn't the last image and they flick left go forward
                 currentImage++;
                 flipper.setOutAnimation(this, R.anim.slide_out_left);
                 flipper.setInAnimation(this, R.anim.slide_in_left);
                 flipper.showNext();
-                if(currentImage >= imageLoaded && currentImage < data.length()-1) { //if the image to the next of you after fling hasn't been loaded yet, load it.
+                if(currentImage >= imageLoaded) { //if the image to the next of you after fling hasn't been loaded yet, load it.
                     imageLoaded++;
                     try {
                         new getBitmapFromUrl().execute(data.getJSONObject(imageLoaded).getString("url"));
