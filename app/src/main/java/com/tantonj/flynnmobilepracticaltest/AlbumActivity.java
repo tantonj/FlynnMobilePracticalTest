@@ -40,7 +40,6 @@ public class AlbumActivity extends AppCompatActivity {
         setContentView(R.layout.album_grid_layout);
 
         albumGridAdapter = new ThumbnailAdapter(this); //initiate Adapter
-
         GridView gv = (GridView)findViewById(R.id.albumGrid); //get gridview, set adapter, and create both click listeners
         gv.setAdapter(albumGridAdapter);
         gv.setOnItemClickListener(new GridView.OnItemClickListener() { //initiates openAlbum AsyncTask
