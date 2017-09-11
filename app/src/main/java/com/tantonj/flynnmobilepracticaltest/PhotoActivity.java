@@ -205,7 +205,7 @@ public class PhotoActivity extends AppCompatActivity implements GestureDetector.
                 JSONObject post = new JSONObject();
                 post.put("method", "POST");
                 post.put("data", params[0]);
-                String address = "http://jsonplaceholder.typicode.com/albums";
+                String address = "http://jsonplaceholder.typicode.com/photos";
                 String requestBody = post.toString();
                 URL url = new URL(address);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();

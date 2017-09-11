@@ -14,4 +14,6 @@ This Activity's layout has a ViewFlipper, and another version of the floating '+
 Photo data is retrieved with http://jsonplaceholder.typicode.com/photos?albumId=id. Pressing the '+' will bring up a Dialog to enter title and url. 
 In an actual application one would allow for upload, and share intents, then either send the image data to the server or upload to a cloud service and get short url. 
 I skip these complications with having just a field for url. Any image added will be added to the end of the album queue. If it was an empty album, the image should show up. 
-Image Title and Album Title are presented on screen. All Activities and Fragments flow and resume properly. Potential for many moreFeatures!
+Image Title and Album Title are presented on screen. Image is added to server with POST using http://jsonplaceholder.typicode.com/photos  
+If you exit PhotoActivity and go back into that album, all added albums will be gone, as it will get from server each time it enters album (fake server).
+Once again this would be overcome through sdcard backup. All Activities and Fragments flow and resume properly. Potential for many moreFeatures!

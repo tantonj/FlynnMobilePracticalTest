@@ -40,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AlbumActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AlbumActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/AlbumActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
+            <state relative-caret-position="2674">
               <caret line="167" column="86" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PhotoActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/PhotoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2584">
-              <caret line="179" column="42" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+            <state relative-caret-position="325">
+              <caret line="213" column="66" selection-start-line="213" selection-start-column="66" selection-end-line="213" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1996,8 +1996,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_photo_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/ThumbnailAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/AddDialogFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/PhotoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/AlbumActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/PhotoActivity.java" />
       </list>
     </option>
   </component>
@@ -2768,23 +2768,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/PhotoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="179" column="42" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/AlbumActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
+        <state relative-caret-position="2674">
           <caret line="167" column="86" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#941#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tantonj/flynnmobilepracticaltest/PhotoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="213" column="66" selection-start-line="213" selection-start-column="66" selection-end-line="213" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
